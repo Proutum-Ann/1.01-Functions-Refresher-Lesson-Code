@@ -160,6 +160,23 @@ function textBoxColor () {
   }
 }
 
+// Change both
+function titleBoxColor () {
+  const newEdits = prompt('Enter a new title, then enter a hex value separated by commas (do not use #):')
+
+  if(!newEdits) {
+    render("<p>No inputs given!</p>")
+    return
+  }
+
+  const edits = newEdits.split(', ')
+
+  document.getElementById('pageTitle').innerText = edits[0]
+
+  out.style.backgroundColor = '#' + edits[1]
+
+}
+
 // ---- New Buttons ----
 document.getElementById('btnTitle').addEventListener('click', titleChange)
 document.getElementById('btnColor').addEventListener('click', textBoxColor)
