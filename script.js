@@ -135,3 +135,20 @@ document.getElementById('btnClear').addEventListener('click', clearOutput)
   Write each function below, and don’t forget to connect each one 
   to a new button in index.html using addEventListener.
 */
+
+// Change title text
+function titleChange () {
+  const newTitle = prompt('Change the title text! Write a new title for the page!')
+
+  if(!newTitle) {
+    render('<p>No title given!</p>')
+    return
+  } else {
+    document.getElementById('pageTitle').innerText = newTitle
+  }
+}
+
+// ---- New Buttons ----
+document.getElementById('btnTitle').addEventListener('click', titleChange)
+document.getElementById('btnColor').addEventListener('click', textBoxColor)
+document.getElementById('btnBoth').addEventListener('click', titleBoxColor)

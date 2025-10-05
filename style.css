@@ -68,3 +68,26 @@ main {
   color: #fff;
 }
 #btnClear:hover { background-color: #991b1b; }
+
+
+/* New Buttons */
+#btnTitle {
+  background-color: #b45309;
+  border-color: #9a3412;
+  color: #fff;
+}
+#btnTitle:hover { background-color: #9a3412; }
+
+#btnColor {
+  background-color: #15803d;
+  border-color: #166534;
+  color: #fff;
+}
+#btnColor:hover { background-color: #166534; }
+
+#btnBoth {
+  background-color: #d97706;
+  border-color: #b45309;
+  color: #fff;
+}
+#btnBoth:hover { background-color: #b45309; }
