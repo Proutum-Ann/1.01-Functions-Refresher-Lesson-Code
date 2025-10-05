@@ -148,6 +148,18 @@ function titleChange () {
   }
 }
 
+// Change box color
+function textBoxColor () {
+  const newColor = prompt('Give a valid rgb, rgba, or hex value for the box background! (You must add the required prefixes and symbols for this to work.)')
+
+  if(!newColor) {
+    render('<p>Please enter a color value!</p>')
+    return
+  } else {
+    out.style.backgroundColor = newColor
+  }
+}
+
 // ---- New Buttons ----
 document.getElementById('btnTitle').addEventListener('click', titleChange)
 document.getElementById('btnColor').addEventListener('click', textBoxColor)
