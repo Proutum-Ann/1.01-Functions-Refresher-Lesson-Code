@@ -113,6 +113,8 @@ function randomBetween () {
 function clearOutput () {
   // TODO: Write your code here
   render("<p>Output cleared.</p>")
+  document.getElementById('pageTitle').innerText = `🍂 JS Functions Demo`
+  out.style.backgroundColor = '#fef3c7'
 }
 
 // ---- Event listeners for the demo buttons ----
